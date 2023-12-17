@@ -4,7 +4,7 @@
    .MODEL small                                          ; MODEL directive - Small memory model
    .STACK 100h                                           ; STACK directive - Allocate a 256 bytes stack 
    .DATA                                                 ; DATA Directive - declare and define data elements
-		output DB 'Hello World!',13,10                     ; Define bytes named output as string with Hello World! CF, LF in Data section
+		output DB 'Hello World!',13,10           ; Define bytes named output as string with Hello World! CF, LF in Data section
                                                          ; output: name of the variable
                                                          ; DB: "Define Byte" directive
                                                          ;'Hello World!',13,10: value - string, CF, LF
@@ -13,7 +13,7 @@
                                                          ; the following lines of code contain actual instructions that will be executed by the CPU
    .startup
    
-   mov  ax,@data				                           	; move data segment to ax register
+   mov  ax,@data				         ; move data segment to ax register
                                                          ; MOV: move instruction, which copies a value from one location to another
                                                          ; AX: 16-bit general-purpose register in x86 architecture.
                                                          ; @DATA is a special predefined symbol that represents the starting address of the DATA segment. 
